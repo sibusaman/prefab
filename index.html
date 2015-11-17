@@ -21,12 +21,42 @@
     </style>
     <style>
       h1, h2, h3, h4, h5, h6 {display: inline;}
-    </style>  
+    </style>
+      
     <style>
         code {color: greenyellow; background:black}
         samp {color: magenta; background:black}
         strong {color:black; background:navajowhite}
     </style>
+      
+    <style>
+        div.img {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #0000ff;
+            height: auto;
+            width: auto;
+            float: left;
+            text-align: center;
+        }	
+        
+        div.img img {
+            display: inline;
+            margin: 5px;
+            border: 1px solid #ffffff;
+        }
+        
+        div.img a:hover img {
+            border: 1px solid #0000ff;
+        }
+        
+        div.desc {
+            text-align: center;
+            font-weight: normal;
+            width: 120px;
+            margin: 5px;
+        }
+    </style>  
   </head>
 
   <body>
@@ -48,9 +78,11 @@
           <a id="about-this-page" class="anchor" href="#about-this-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>About this page
         </h3>
 
-        <p>hello world,</p>
+        <p>Hello world,</p>
 
-        <p>This is my first web page. I am building this from scratch and will revise the page with new features and content as and when I learn/get them. So this is a work in progress.</p>
+        <p>This is my first web page and my first experience with html coding. I am building this from scratch and will revise the page with new features and content as and when I learn/get them. So this is a work in progress. Before we begin let me tell you this.</p>
+          
+        <p> You won't find any detailed instructions to setup any of the machines or softwares used during the academy, that is because I feel that whoever is reading this either know about the machine or doesn’t. If he/she knows, the he/she don’t need my ‘guidance’, and if doesn’t know how to use the machines, he/she is not supposed learn that from here(because there is a limit to what I can convey via writing or a bunch of images/videos and I don't want to br the cause of any confusion), he is supposed to learn it from a qualified trainer. Those interested can always find good online tutorial on almost all topics  and I will include such links that I find interesting/useful. So essentially this page is not a step by step instructions to anything, but I will do that for the project documentation, because that is something I did myself. </p>  
         
         <h2> Activities of each week </h2>
         <ul>
@@ -145,7 +177,7 @@
                     You can now launch Antimony by typing antimony in terminal (only after updating the profile by <code>source ~/.profile</code> or by loging out and re-login)
                 </p>
                 <p>
-                    We explored Antimony for some time, I like the fact that everything is linked together. You change one parameter of one object and all of a sudden every ‘child’ and overall design changes, no need to start from the scratch. At the same time the software is all code based and may poss a change to newbies.
+                    We explored Antimony for some time, I like the fact that everything is linked together. You change one parameter of one object and all of a sudden, every ‘child’ and overall design changes, no need to start from the scratch. At the same time the software is mainly code based and may poss a change to newbies. I find Antimony useful if the design is symmetric in some way or if the design has repeating structures (like a gear) or if the design can be made of simple 2D curves.
                 </p>  
               </ul>
               </div>      
@@ -155,6 +187,125 @@
             
             
             
+          <lin>
+            <div class="row">
+              <a href="#hide2" class="hide" id="hide2"><h2> Week 2 </h2></a>
+              <a href="#show2" class="show" id="show2"><h2> Week 2 </h2></a>
+              <div class="list">
+                <ul>
+                  <p>Like last week, we begin this week by cleaning up and rearranging the lab, Mr Luciano is strict about the arrangement. We arranged items as per their use, molding and casting on one rack, safety equipments on another, electronic components and consumables on another, miscellaneous on another.
+                  </p>
+                  
+                  <h2>The week of machines</h2>    
+                  
+                  <p>
+                      So from this week onwards we are going to learn about the machines in the FabLab. Then we are supposed to do a project involving a minimum of  three (later relaxed to two, maybe because the laser cutter in FabLab@Kochi is down) machines in the lab, and should involve some electronics. 
+                      <br>
+                      So the machines... Lets get to it..
+                  </p>
+                    
+                  <h3> Vinyl Cutter </h3>    
+                  <p>
+                      The first machine we learned was vinyl cutter. At FabLab this machine has a few functions, make vinyl stickers, make stencils for screen printing and making flexible PCBs. The machine we have here is <a href="http://www.rolanddg.com/product/cutting/gx-24/gx-24.html">Roland CAMM-1 GX-24</a>. You may read the <a href="http://www.rolanddg.com/product/cutting/gx-24/spec.html">specifications</a> to know more details about the machine like maximum cutting speed, force etc. Also the User's manual is <a href="files/GX-24%20manual.pdf">here</a>. <br>
+                      The machine holds the blade in holder with a bearing inside, so that the blade is free to rotate and align itself along the curve it’s cutting. It’s like the rudder of the windmill aligning itself along the direction of the wind. The machine moves the blade  holder along X-axis (along the length of the machine) and the sheet moves in and out of  the machine, which correspond to the Y-axis. Just enough force is applied to the sheet that only the  top layer is cut, with the right tuning will not get cut. The force/cutting depth can be adjusted from the software as well as a slider (for fine tuning) on the machine control panel.
+                  </p>
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn1.JPG" alt="Vinyl Cutter" onmouseover="this.width='1000'" onmouseout="this.width='110'"></a>
+                      <div class="desc">The Vinyl Cutter we have, Roland CAMM-1 GX-24</div>
+                    </div>   
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/blade-holder.jpg" alt="Blade holder" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">The Blade Holder</div>
+                    </div>
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/blade.JPG" alt="Blades" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">The Blades</div>
+                    </div>
+                  <p>
+                      <br><br><br><br><br><br><br><br><br>
+                      I designed a logo in Rhino and exported as .dwg and then to .svg. The machine uses a vector graphics file or makes tool path from a raster image. Then I used the machine to cut out the logo in vinyl and applied on my USB-HDD. The process is as follows.
+                  </p>     
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/s-logo.svg" alt="logo" onmouseover="this.width='1000'" onmouseout="this.width='110'"></a>
+                      <div class="desc">The logo I designed; S for Sibu.</div>
+                    </div>   
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn2.jpg" alt="after cutting" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">After cutting, you can see the cut marks on the vinyl.</div>
+                    </div>
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn3.jpg" alt="" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc"></div>
+                    </div> 
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn4.jpg" alt="peeling" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">After peeling of what I don't want</div>
+                    </div>
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn5.jpg" alt="applying masking tape" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">Applying the masking tape.</div>
+                    </div>  
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn6.jpg" alt="transfer" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">Logo ready for transfer.</div>
+                    </div>  
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn7.jpg" alt="On target" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">Vinyl applied on target, my USB HDD.</div>
+                    </div>  
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn8.jpg" alt="result" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">The result.</div>
+                    </div>  
+                    <div class="img">
+                      <a target="_blank" ><img src="images/vinyl/vn9.jpg" alt="another try" onmouseover="this.width='600'" onmouseout="this.width='110'"></a>
+                      <div class="desc">once more.</div>
+                    </div>  
+                    <p><br><br><br><br><br><br><br><br><br><br><br><br><br>PS:-  Not copied from Superman or Suzuki, it’s my own creation, just happened to be in red Vinyl.</p>  
+                    <p>
+                        So what I did just do?
+                        <ul>
+                            <li>Make/get an image of your choice</li>
+                            <li>If the image is a vector graphic (.svg for example), you can simply load it in fab modules, resize as per your requirement and cut. But if it is a raster image (.jpg .png .bmp etc) then you need to convert it to black&amp;white (you may use gimp) and extract the outline/edge which is what we will be using as the tool path. Raster images may require some processing to get the desired output, you may convert the image to just single color, ie. 1-bit per pixel. In Gimp you can use <samp>image->mode->indexed</samp> and select <samp>Use black and White (1-bit) palette</samp>. Don't forget to use .png for rastrer.</li>
+                            <li>Once you have your .png/svg ready, choose the proper option in fab modules and load the image, check the size and resize if necessary.   </li>
+                            <li>Load the vinyl roll/cut-sheet to the machine and use the control panel to choose the proper setting. The machine has two optical sensors and  you can tell the machine to use them to find the usable dimension of the piece you loaded. </li>
+                            <li>The machine has rollers and grips, make sure that the sheet is supported buy the two rollers. Note that the rollers must be placed on the grips (white marking).</li>
+                            <li>A detachable roller is available behind the machine and that’s where you keep the roll of vinyl.</li>
+                            <li>You need to use the lever to lock the machine once you load the sheet.</li>
+                            <li>Now you can cut the design by scissors or the cutting tool. </lin>
+                            <li>You may transfer the sticker from the substrate onto the target with the help of masking tape. But if the design is large and don’t have any delicate structures you can choose not to, think and decide. </li>
+                            <li>The masking tape will stick to the vinyl and sometimes will be difficult to remove. <strong>I fixed the issue by dusting the vinyl with a little talcum-powder prior to applying the masking tape. Don’t put too much talcum, then the masking tape won’t stick at all</strong>. </li>
+                        </ul>
+                        
+                        <figure>
+                            <img src="images/vinyl/back.JPG" alt="lever" onmouseover="this.width='1000'" onmouseout="this.width='200'">
+                            <figcaption style="display:inline"> <h4 style="color:grey">The roller for supporting the vinyl rolls and locking lever. </h4></figcaption>
+                        </figure>
+                  
+                        <figure>
+                            <img src="images/vinyl/vnx.JPG" alt="cutter" onmouseover="this.width='1000'" onmouseout="this.width='200'">
+                            <figcaption style="display:inline"> <h4 style="color:grey">The cutting tool, this tool has a sliding cutter and it has two positions like the shutter button of a camera. First stop will only cut the vinyl and not the substrate, and you just guessed what to do for cutting the substrate too. </h4></figcaption>
+                        </figure>  
+                        <figure>
+                            <img src="images/vinyl/vn-ex.JPG" alt="explan" onmouseover="this.width='1000'" onmouseout="this.width='200'">
+                            <figcaption style="display:inline"> <h4 style="color:yellow"> tool holder </h4>, <h4 style="color:red"> one of the optical sensor</h4>, <h4 style="color:green"> 'grip' and the corresponding white mark </h4>, <h4 style="color:blue; background:yellow"> the roller on another 'grip' </h4> </figcaption>
+                        </figure>
+                    </p>
+                    <p>
+                        You can use the  machine to cut copper sheets and make flexible PCBs by transferring the traces that you cut to a heat resistant substrate. The overall process is similar.
+                        <figure>
+                            <img src="images/vinyl/roll.JPG" alt="roll" onmouseover="this.width='1000'" onmouseout="this.width='200'">
+                            <figcaption style="display:inline"> <h4 style="color:grey">Vinyls of different width and colors along with the copper roll used for flexible PCB.   </h4></figcaption>
+                        </figure>
+                    </p>
+                
+                    <h3> Roland MDX-20 Mill</h3>
+                </ul>
+              </div>
+            </div>
+          </lin>
+        
+
           <lin>
             <div class="row">
               <a href="#hide4" class="hide" id="hide4"><h2> Week 4 </h2></a>
@@ -173,6 +324,8 @@
               </div>
             </div>
           </lin>
+            
+            
         </ul>
       </section>
     </div>
