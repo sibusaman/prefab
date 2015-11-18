@@ -131,8 +131,8 @@
                     During the installation it will ask for the destination, I choose
                     <samp>/opt</samp> because this is the preferred installation location for all external applications and all users would be able to use binaries installed at this location. This is why I used the
                     <code>sudo</code>, as a normal user you don’t have access to
-                    <samp>/opt</samp> hence you can’t install anything here. But if you prefer to keep the QT installation exclusive to you, then you can choose not to use <code>sudo</code> and install QT somewhere in your home directory, BUT I recommend otherwise. For
-                    me the installation created a directory
+                    <samp>/opt</samp> hence you can’t install anything here. But if you prefer to keep the QT installation exclusive to you, then you can choose not to use
+                    <code>sudo</code> and install QT somewhere in your home directory, BUT I recommend otherwise. For me the installation created a directory
                     <samp>/opt/Qt5.5.1/</samp>.
                   </p>
 
@@ -346,39 +346,92 @@
 
                   <h3> Roland MDX-20 Mill</h3>
                   <p>
-                  <p>
-                    Perhaps the most used machine in the Fablab?. This machine can be used for making the PCB (milling and drilling), carving simple 3D structures in machine wax. The machine can be considered as a mini CNC mill. The workpiece is attached on a detachable
-                    plate which moves along the Y-axis. The drilling/milling tool is attached to the head which moves along the X-axis. The drill/mill bit is attached to a DC-motor which is mounted on a carriage that allows the the movement along the
-                    third axis, the Z-axis.
-                  </p>
-                  <p>
-                    The motor and the milling/drilling tools spins at high rpm to remove the material from the workpiece as small chips. The milling bit primarily moves along the X-Y plane except for the beginning and the end of each section being milled. The milling bit
-                    is designed such that it cuts into material from side, ie the material removal happens during the lateral movement of the tool. The drilling bit has the main cutting edge at the end of the tool, which allows it to make holes in the
-                    workpiece. The tools will have flutes (spiral cut in the body) along the length of the tool to facilitate in chip removal and sometimes to allow the flow of the coolant liquids to the cutting area.
-                  </P>
-                  <figure>
-                    <img src="" alt="TODO " onmouseover="this.width='600'" onmouseout="this.width='110'">
-                    <figcaption style="display:inline">Image of the bits and the machine to be added!</figcaption>
-                  </figure>
-                  <p>
-                    There are a few thing to be careful when you are using the machine
-                    <ul>
-                      <li>
-                        Make sure that the Z-axis has enough room to move down, else you will be left with a PCB not cut/drilled all the way or a wax model which is not complete or a PCB with copper where it is not supposed to be.
-                      </li>
-                      <li> Check the dimensions of the your original design and in the fab modules after loading the .png, resize if necessary. </li>
-                      <li> Also check the dimensions of the copper board being used, make sure that your design fits.</li>
-                      <li>
-                        Try to optimize your design and the placement of the PCB and origin; to reduce the wastage. If possible use the leftover from the previous milling orations.
-                      </li>
-                      <li>Use sacrificial material for PCB milling operations.</li>
-                      <li>
-                        Use proper settings and the bits, (especialy don't use the milling bit to cut, because you will break the delicate and costly milling bit. But if you use drilling bit to mill, you will only spoil the PCB, which is cheap).
-                      </li>
-                      <li> Take safety precautions, 'respect' the machine and the electricity. </li>
-                    </ul>
+                    <p>
+                      Perhaps the most used machine in the Fablab?. This machine can be used for making the PCB (milling and drilling), carving simple 3D structures in machine wax. The machine can be considered as a mini CNC mill. The workpiece is attached on a detachable
+                      plate which moves along the Y-axis. The drilling/milling tool is attached to the head which moves along the X-axis. The drill/mill bit is attached to a DC-motor which is mounted on a carriage that allows the the movement along the
+                      third axis, the Z-axis.
+                    </p>
+                    <p>
+                      The motor and the milling/drilling tools spins at high rpm to remove the material from the workpiece as small chips. The milling bit primarily moves along the X-Y plane except for the beginning and the end of each section being milled. The milling bit
+                      is designed such that it cuts into material from side, ie the material removal happens during the lateral movement of the tool. The drilling bit has the main cutting edge at the end of the tool, which allows it to make holes in the
+                      workpiece. The tools will have flutes (spiral cut in the body) along the length of the tool to facilitate in chip removal and sometimes to allow the flow of the coolant liquids to the cutting area.
+                    </P>
+                    <figure>
+                      <img src="" alt="TODO " onmouseover="this.width='600'" onmouseout="this.width='110'">
+                      <figcaption style="display:inline">Image of the bits and the machine to be added!</figcaption>
+                    </figure>
+                    <p>
+                      There are a few thing to be careful when you are using the machine
+                      <ul>
+                        <li>
+                          Make sure that the Z-axis has enough room to move down, else you will be left with a PCB not cut/drilled all the way or a wax model which is not complete or a PCB with copper where it is not supposed to be.
+                        </li>
+                        <li> Check the dimensions of the your original design and in the fab modules after loading the .png, resize if necessary. </li>
+                        <li> Also check the dimensions of the copper board being used, make sure that your design fits.</li>
+                        <li>
+                          Try to optimize your design and the placement of the PCB and origin; to reduce the wastage. If possible use the leftover from the previous milling orations.
+                        </li>
+                        <li>Use sacrificial material for PCB milling operations.</li>
+                        <li>
+                          Use proper settings and the bits, (especialy don't use the milling bit to cut, because you will break the delicate and costly milling bit. But if you use drilling bit to mill, you will only spoil the PCB, which is cheap).
+                        </li>
+                        <li> Take safety precautions, 'respect' the machine and the electricity. </li>
+                      </ul>
+                      So with this machine we were supposed to make <a href="TODO link to fabISP"> FabISP </a>. Mr. Luciano showed us how to use the machine once. Now it's upto us. I made the FabISP not once but twice, first time this one
+                      <figure>
+                        <img src="" alt="TODO " onmouseover="this.width='600'" onmouseout="this.width='110'">
+                        <figcaption style="display:inline">Image of FabISP</figcaption>
+                      </figure>
+                      and then <a href="TODO link to FabISP key"> this </a>, because there was a shortage of mini USB cables and the second version can be plugged into the USB port directly, no need of any mini/micro USB cables. I was looking if I can
+                      just replace the 'mini USB' port with the 'micro' and found that the pitch of the pins is not right. So I looked at other designs with micro USB port, and I came across this, actually Praveen (another fellow student) told me that
+                      something like this is there. So decided to make it.
+                      <figure>
+                        <img src="" alt="TODO " onmouseover="this.width='600'" onmouseout="this.width='110'">
+                        <figcaption style="display:inline">Image of the FabISP key</figcaption>
+                      </figure>
+                      I didn't want to make a new board with new set of components because that will be a waste of components. So I just removed the components from the original ISP one by one and placed it onto the new board. All components except the IC and the ISP connector
+                      was removed using the soldering iron. IC and the ISP connector was removed using the heat-gun.
+                    </p>
+                    <!-- TODO: how to pause and resume the operation -->
+                    <!-- TODO: howto restart the operation without losing the board -->
+                    <p>
+                      I made few more boards for my projects and I have faced some issues and my friends also faced some, other people who came to use the lab. Also found some boards in the trash. Lets try to understand what the problem is and how to fix it.
+                      <!-- TODO: pics of bad boards and solutions -->
+                      <!-- TODO: traces  coming out; wrong/broken bit -->
+                      <!-- TODO: positioning of the bit; board doesn't cutout, copper not removed   -->
+                      <!-- TODO: traces still connected; check the spacing in fab modules or the eagle -->
+                    </p>
+                    <h3>Soldering - programming - de-soldering - soldering the FabISP </h3>
+                    <p>
+                      So whats the heading about? Thats exactly what happened, I made the original FabISP, found no USB cable to use, removed the components and soldered them onto the new board to make the FabISP Key. So here I plan to talk a bit about my methods of soldering
+                      and de-soldering, it may or may not be the right way, but works best for me (may be till I see a better method from someone).
+                    </p>
+                    <p>
+                      The soldering first.
+                      <br> Most important thing is that you need a clean surface to solder on, so if the PCB is not clean enough, do that first. The flux will help but only to an extend. The flux used in the lead-free solder is a nasty stuff and don't recommend
+                      breathing it. I use a flux pen to dispense the flux in small quantities, the flux pen has rosin (comparitevely safe, and is a natural material) dissolved in a solvent (by the way I did this myself). Apply the flux only if necessary,
+                      too much is not good. Also keep in mind that the solder wire itself has flux built into the core.
+                    </p>
+                    <p>
+                      Begin the soldering from the center and move out, smaller components first. But the order is matter of personal choice Important thing is that the the soldered components shouldn't hinder access to the new components being soldered. For components like
+                      SMT resistors/capacitors start by putting a bit of solder onto one of the pad and place the component to this molten puddle of solder. Don't solder the other end yet, you better wait till the end and verify once before soldering
+                      the second pads.
+                    </p>
+                    <p>
+                      For ICs, I start similarly, start with soldering one pin to the pad and align the IC properly while keeping
+                      <thead>
+                        the solder melted. Once aligned remove the iron, you are now free to solder the remaining pins. I do drag soldering with the help of the solder-wick. Brush flux on all the pins of the IC, take a small piece of solder wick and wick enough solder on it.
+                        Now drag the iron along the pins with the sodler-wick between, so the wick will release just the right amount of solder to the pins. The flux is used to reduce the viscosity of the solder, to ease the flow of molten solder. Break
+                        the unwanted the solder bridges by touching up with the soldering iron or by wicking off the extra. I prefer the biggest tip ( chisel type) bit for drag soldering.
+                        <br> Some may suggest against this method, saying it uses more flux. But I don't think so. First of all the process is quick, with experience you can solder a 64 pin ic in seconds, and the extra solder you are applying is only very
+                        little. Also keep in mind that the flux within the lead-free solder is more hazardous than pure rosin based flux (but cleaning maybe necessary). Also in most cases the solder used will be less, as soldering each pin one by one tends to use more solder
+                        which may cause bridging and require wicking off the excess.
+                        <!-- TODO: link to drag soldering videos -->
+                    </p>
 
-                  </p>
+                    <h2>
+                      <br>soldering station</h2>
+                    <!-- TODO:  -->
               </div>
           </lin>
 
